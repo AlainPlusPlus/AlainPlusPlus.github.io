@@ -1106,13 +1106,13 @@ input[type="text"] {
 }
 
 .btn-primary {
-  background: #FF9000;
+  background: #0090FF;
   color: #fff;
-  border: 2px solid #FF9000;
+  border: 2px solid #0090FF;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #ff9b1a !important;
-  border-color: #ff9b1a !important;
+  background: #0070FF !important;
+  border-color: #0070FF !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
@@ -1250,7 +1250,7 @@ input[type="text"] {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #FF9000;
+  border-color: #0090FF;
 }
 
 .row-pb-md {
