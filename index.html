@@ -207,22 +207,22 @@
                     <form id="form" method="GET" action="mailto:bobespunkja@hotmail.com" enctype="text/plain">
                         <div class="row form-group">
                             <div class="col-md-6">
-                                <input type="text" name="Name" id="fname" class="form-control" placeholder="Your firstname">
+                                <input type="text" name="Name" id="fname" class="form-control" placeholder="Your firstname" required>
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-md-6">
-                                <input type="text"  name="L-Name" id="lname" class="form-control" placeholder="Your lastname">
+                                <input type="text"  name="L-Name" id="lname" class="form-control" placeholder="Your lastname" required>
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <input type="text"  name="Email" id="email" class="form-control" placeholder="Your email address">
+                                <input type="text"  name="Email" id="email" class="form-control" placeholder="Your email address" required>
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <input type="text"  name="Subject" id="subject" class="form-control" placeholder="Your subject of this message">
+                                <input type="text"  name="Subject" id="subject" class="form-control" placeholder="Your subject of this message" required>
                             </div>
                         </div>
                         <div class="row form-group">
@@ -285,11 +285,13 @@
                     if(target[i].type != 'text' && target[i].type != 'textarea') {
                         continue;
                     }
-                    
-                    // let value = target[i].value.replace(" ", "\t");
+
+                    let value = target[i].value.replace(" ", "\t");
 
                     if (target[i].name != "Subject")
                         message += target[i].name + ':\t' + value + "\r\n";
+                    else
+                        target[i].value = value
                 }
                 console.log(message);
                 target.elements["body"].value = message;
