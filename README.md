@@ -1,2 +1,2 @@
 # AlainPlusPlus.github.io
-Personal website
+Personal website with no JavaScript.
